@@ -1,0 +1,304 @@
+[
+    {
+        "frase": "Me sentí repugnado al verlo",
+        "emocion": "asco",
+        "imagen": "imagenes/01.png"
+    },
+    {
+        "frase": "Estoy sonriendo desde que llegué",
+        "emocion": "alegría",
+        "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "No soporto esa textura",
+        "emocion": "asco",
+         "imagen": "imagenes/03.png"
+    },
+    {
+        "frase": "¡Estoy que exploto!",
+        "emocion": "enojo",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "Fue una experiencia sorprendente",
+        "emocion": "sorpresa",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "Me preocupa el futuro",
+        "emocion": "miedo",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "Me asusté con el ruido",
+        "emocion": "miedo",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "Estoy nervioso por el examen",
+        "emocion": "miedo",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "No soporto más esta injusticia",
+        "emocion": "enojo",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "Estoy furioso por lo que pasó",
+        "emocion": "enojo",
+         "imagen": "imagenes/02.png"
+        
+    },
+    {
+        "frase": "Estoy satisfecho con mi trabajo",
+        "emocion": "alegría",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "Siento miedo al caminar solo",
+        "emocion": "miedo",
+        "imagen": "imagenes/05.png"
+    },
+    {
+        "frase": "Me sorprendió tu regalo",
+        "emocion": "sorpresa",
+        "imagen": "imagenes/04.png"
+    },
+    {
+        "frase": "Fue una escena nauseabunda",
+        "emocion": "asco",
+         "imagen": "imagenes/04.png"
+    },
+    {
+        "frase": "Hoy no tengo ánimo de nada",
+        "emocion": "tristeza",
+         "imagen": "imagenes/03.png"
+    },
+    {
+        "frase": "Siento una repulsión intensa",
+        "emocion": "asco",
+        "imagen": "imagenes/04.png"
+    },
+    {
+        "frase": "¡No me lo imaginaba!",
+        "emocion": "sorpresa",
+        "imagen": "imagenes/06.png"
+
+    },
+    {
+        "frase": "Estoy muy feliz con el resultado",
+        "emocion": "alegría",
+        "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "¡Fue un día maravilloso!",
+        "emocion": "alegría",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "Estoy inquieto todo el tiempo",
+        "emocion": "miedo",
+        "imagen": "imagenes/05.png"
+    },
+    {
+        "frase": "Estoy devastado emocionalmente",
+        "emocion": "tristeza",
+        "imagen": "imagenes/03.png"
+    },
+    {
+        "frase": "Me siento pleno y agradecido",
+        "emocion": "alegría",
+        "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "No dejo de pensar en lo que pasó",
+        "emocion": "tristeza",
+        "imagen": "imagenes/05.png"
+    },
+    {
+        "frase": "Tengo mucha rabia acumulada",
+        "emocion": "enojo",
+        "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Estoy paranoico últimamente",
+        "emocion": "miedo",
+        "imagen": "imagenes/05.png"
+    },
+    {
+        "frase": "Todo me parece gris y sin sentido",
+        "emocion": "tristeza",
+         "imagen": "imagenes/03.png"
+    },
+    {
+        "frase": "¡Qué olor tan desagradable!",
+        "emocion": "asco",
+         "imagen": "imagenes/04.png"
+    },
+    {
+        "frase": "Estoy impresionado con tus logros",
+        "emocion": "sorpresa",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Me enfada que no me escuchen",
+        "emocion": "enojo",
+         "imagen": "imagenes/07.png"
+    },
+    {
+        "frase": "Estoy muy contento con el equipo",
+        "emocion": "alegría",
+        "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Estoy asombrado por la noticia",
+        "emocion": "sorpresa",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Esto es completamente inaceptable",
+        "emocion": "enojo",
+         "imagen": "imagenes/07.png"
+    },
+    {
+        "frase": "Es absolutamente asqueroso",
+        "emocion": "asco",
+        "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Me tomó desprevenido",
+        "emocion": "sorpresa",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Perdí algo importante para mí",
+        "emocion": "tristeza",
+         "imagen": "imagenes/07.png"
+    },
+    {
+        "frase": "¡No lo puedo creer!",
+        "emocion": "sorpresa",
+         "imagen": "imagenes/07.png"
+    },
+    {
+        "frase": "Todo salió mejor de lo esperado",
+        "emocion": "alegría",
+         "imagen": "imagenes/03.png"
+    },
+    {
+        "frase": "Me da pánico hablar en público",
+        "emocion": "miedo",
+         "imagen": "imagenes/05.png"
+    },
+    {
+        "frase": "Me da náuseas recordarlo",
+        "emocion": "asco",
+         "imagen": "imagenes/05.png"
+    },
+    {
+        "frase": "Eso fue completamente inesperado",
+        "emocion": "sorpresa",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Estoy triste por la noticia",
+        "emocion": "tristeza",
+         "imagen": "imagenes/05.png"
+    },
+    {
+        "frase": "Estoy melancólico desde la mañana",
+        "emocion": "tristeza",
+         "imagen": "imagenes/05.png"
+    },
+    {
+        "frase": "Estoy irritado con el tráfico",
+        "emocion": "enojo",
+         "imagen": "imagenes/07.png"
+    },
+    {
+        "frase": "Me encanta este lugar",
+        "emocion": "alegría",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "Temo que me hagan daño",
+        "emocion": "miedo",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Me causa repulsión solo pensarlo",
+        "emocion": "asco",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Tengo temor de lo que pueda pasar",
+        "emocion": "miedo",
+         "imagen": "imagenes/05.png"
+    },
+    {
+        "frase": "Tengo ansiedad constante",
+        "emocion": "miedo",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Me molesta tu actitud",
+        "emocion": "enojo",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Estoy harto de esta situación",
+        "emocion": "enojo",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Lloré anoche pensando en eso",
+        "emocion": "tristeza",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "¡Qué sorpresa tan agradable!",
+        "emocion": "sorpresa",
+         "imagen": "imagenes/07.png"
+    },
+    {
+        "frase": "Eso me provoca rechazo",
+        "emocion": "asco",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Esa comida me dio asco",
+        "emocion": "asco",
+         "imagen": "imagenes/04.png"
+    },
+    {
+        "frase": "No esperaba verte aquí",
+        "emocion": "sorpresa",
+         "imagen": "imagenes/06.png"
+    },
+    {
+        "frase": "Me siento muy solo últimamente",
+        "emocion": "tristeza",
+         "imagen": "imagenes/05.png"
+    },
+    {
+        "frase": "Disfruto mucho la reunión de hoy",
+        "emocion": "alegría",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "Qué alegría verte de nuevo",
+        "emocion": "alegría",
+         "imagen": "imagenes/02.png"
+    },
+    {
+        "frase": "Grité del coraje que tenía",
+        "emocion": "enojo",
+        "imagen": "imagenes/07.png"
+    },
+    {
+        "frase": "Siento un vacío en el corazón",
+        "emocion": "tristeza",
+         "imagen": "imagenes/05.png"
+    }
+]
