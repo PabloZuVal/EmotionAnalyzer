@@ -1,0 +1,61 @@
+frase,imagen,emocion_texto,emocion_imagen,emocion_esperada,coincide
+Me sentí repugnado al verlo,01.png,asco,alegría,asco,No
+Estoy sonriendo desde que llegué,02.png,indefinida,alegría,alegría,No
+No soporto esa textura,03.png,indefinida,neutral,asco,No
+¡Estoy que exploto!,02.png,indefinida,alegría,enojo,No
+Fue una experiencia sorprendente,02.png,sorpresa,alegría,sorpresa,No
+Me preocupa el futuro,02.png,indefinida,alegría,miedo,No
+Me asusté con el ruido,02.png,indefinida,alegría,miedo,No
+Estoy nervioso por el examen,02.png,miedo,alegría,miedo,No
+No soporto más esta injusticia,02.png,indefinida,alegría,enojo,No
+Estoy furioso por lo que pasó,02.png,enojo,alegría,enojo,No
+Estoy satisfecho con mi trabajo,02.png,alegría,alegría,alegría,Sí
+Siento miedo al caminar solo,05.png,miedo,sorpresa,miedo,No
+Me sorprendió tu regalo,04.png,indefinida,alegría,sorpresa,No
+Fue una escena nauseabunda,04.png,indefinida,alegría,asco,No
+Hoy no tengo ánimo de nada,03.png,indefinida,neutral,tristeza,No
+Siento una repulsión intensa,04.png,asco,alegría,asco,No
+¡No me lo imaginaba!,06.png,indefinida,sorpresa,sorpresa,No
+Estoy muy feliz con el resultado,02.png,alegría,alegría,alegría,Sí
+¡Fue un día maravilloso!,02.png,alegría,alegría,alegría,Sí
+Estoy inquieto todo el tiempo,05.png,indefinida,sorpresa,miedo,No
+Estoy devastado emocionalmente,03.png,indefinida,neutral,tristeza,No
+Me siento pleno y agradecido,06.png,alegría,sorpresa,alegría,No
+No dejo de pensar en lo que pasó,05.png,indefinida,sorpresa,tristeza,No
+Tengo mucha rabia acumulada,06.png,enojo,sorpresa,enojo,No
+Estoy paranoico últimamente,05.png,miedo,sorpresa,miedo,No
+Todo me parece gris y sin sentido,03.png,indefinida,neutral,tristeza,No
+¡Qué olor tan desagradable!,04.png,indefinida,alegría,asco,No
+Estoy impresionado con tus logros,06.png,sorpresa,sorpresa,sorpresa,Sí
+Me enfada que no me escuchen,07.png,indefinida,enojo,enojo,No
+Estoy muy contento con el equipo,06.png,alegría,sorpresa,alegría,No
+Estoy asombrado por la noticia,06.png,sorpresa,sorpresa,sorpresa,Sí
+Esto es completamente inaceptable,07.png,indefinida,enojo,enojo,No
+Es absolutamente asqueroso,06.png,asco,sorpresa,asco,No
+Me tomó desprevenido,06.png,sorpresa,sorpresa,sorpresa,Sí
+Perdí algo importante para mí,07.png,indefinida,enojo,tristeza,No
+¡No lo puedo creer!,07.png,indefinida,enojo,sorpresa,No
+Todo salió mejor de lo esperado,03.png,indefinida,neutral,alegría,No
+Me da pánico hablar en público,05.png,indefinida,sorpresa,miedo,No
+Me da náuseas recordarlo,05.png,asco,sorpresa,asco,No
+Eso fue completamente inesperado,06.png,sorpresa,sorpresa,sorpresa,Sí
+Estoy triste por la noticia,05.png,tristeza,sorpresa,tristeza,No
+Estoy melancólico desde la mañana,05.png,tristeza,sorpresa,tristeza,No
+Estoy irritado con el tráfico,07.png,enojo,enojo,enojo,Sí
+Me encanta este lugar,02.png,indefinida,alegría,alegría,No
+Temo que me hagan daño,06.png,indefinida,sorpresa,miedo,No
+Me causa repulsión solo pensarlo,06.png,asco,sorpresa,asco,No
+Tengo temor de lo que pueda pasar,05.png,miedo,sorpresa,miedo,No
+Tengo ansiedad constante,06.png,indefinida,sorpresa,miedo,No
+Me molesta tu actitud,06.png,indefinida,sorpresa,enojo,No
+Estoy harto de esta situación,06.png,enojo,sorpresa,enojo,No
+Lloré anoche pensando en eso,06.png,indefinida,sorpresa,tristeza,No
+¡Qué sorpresa tan agradable!,07.png,sorpresa,enojo,sorpresa,No
+Eso me provoca rechazo,06.png,asco,sorpresa,asco,No
+Esa comida me dio asco,04.png,asco,alegría,asco,No
+No esperaba verte aquí,06.png,indefinida,sorpresa,sorpresa,No
+Me siento muy solo últimamente,05.png,indefinida,sorpresa,tristeza,No
+Disfruto mucho la reunión de hoy,02.png,alegría,alegría,alegría,Sí
+Qué alegría verte de nuevo,02.png,indefinida,alegría,alegría,No
+Grité del coraje que tenía,07.png,indefinida,enojo,enojo,No
+Siento un vacío en el corazón,05.png,indefinida,sorpresa,tristeza,No
