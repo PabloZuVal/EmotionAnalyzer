@@ -1,164 +1,170 @@
-# Reconocimiento Multimodal de Emociones
+# Reconocimiento Multimodal de Emociones en Texto e Imagen
 
-Este proyecto implementa un sistema para reconocer emociones a partir de texto e imágenes faciales, y comparar si ambas modalidades expresan la misma emoción. La actividad está diseñada para desarrollar competencias en procesamiento de texto, análisis de imágenes y la integración de señales multimodales.
+Este proyecto implementa un sistema de reconocimiento multimodal de emociones que analiza tanto texto como imágenes faciales, comparando si ambas modalidades expresan la misma emoción. Es parte de la Actividad 2 del curso de Computación Afectiva.
 
 ---
 
 ## Tabla de Contenidos
 
-- [Descripción](#descripción)
-- [Objetivos](#objetivos)
-- [Tecnologías](#tecnologías)
+- [Descripción de la Actividad](#descripción-de-la-actividad)
+- [Competencias Desarrolladas](#competencias-desarrolladas)
+- [Requisitos](#requisitos)
 - [Instalación](#instalación)
+- [Estructura del Proyecto](#estructura-del-proyecto)
 - [Uso](#uso)
-- [Estructura de Archivos](#estructura-de-archivos)
-- [Datos](#datos)
-- [Modelo Preentrenado](#modelo-preentrenado)
-- [Resultados](#resultados)
-- [Créditos](#créditos)
-- [Notas Adicionales](#notas-adicionales)
+- [Entregables](#entregables)
+- [Evaluación](#evaluación)
 
 ---
 
-## Descripción
+## Descripción de la Actividad
 
-El sistema analiza emociones en dos modalidades:
-- **Texto:** Utilizando un diccionario emocional para identificar la emoción dominante en frases.
-- **Imágenes:** Empleando un modelo preentrenado (FER2013) para clasificar emociones en imágenes faciales.
-- **Comparación:** Determina si las emociones detectadas en el texto y la imagen coinciden.
+El objetivo principal es diseñar e implementar un sistema que:
+1. Detecte emociones expresadas en frases escritas en español
+2. Identifique emociones en imágenes faciales
+3. Compare y analice si ambas modalidades expresan la misma emoción
 
----
-
-## Objetivos
-
-El objetivo de esta actividad es diseñar e implementar un sistema capaz de:
-- Detectar emociones expresadas en una frase escrita.
-- Detectar emociones expresadas en una imagen facial.
-- Comparar si ambas modalidades expresan la misma emoción.
-- Reflexionar sobre las posibles causas de divergencia entre las modalidades.
+El sistema utiliza:
+- Un diccionario emocional simbólico para el análisis de texto
+- El modelo pre-entrenado FER2013 para clasificación de emociones en imágenes
+- Un comparador multimodal para analizar coincidencias
 
 ---
 
-## Tecnologías
+## Competencias Desarrolladas
 
-- **Python 3.8+**
-- **TensorFlow**: Para el modelo de reconocimiento de emociones en imágenes.
-- **NumPy**: Para operaciones numéricas.
-- **Pillow**: Para el manejo de imágenes.
-- **Opcional**:
-  - **OpenCV**: Para visualización y depuración de imágenes.
-  - **Matplotlib**: Para visualización de resultados.
-  - **spaCy**: Para lematización en el análisis de texto.
+- Procesamiento simbólico de emociones desde texto
+- Uso de modelos computacionales para emociones visuales (FER2013)
+- Integración y comparación de señales multimodales
+
+---
+
+## Requisitos
+
+### Requisitos del Sistema
+- Python >= 3.8
+- pip (gestor de paquetes de Python)
+- Espacio en disco para el modelo pre-entrenado
+
+### Dependencias Principales
+- tensorflow >= 2.0.0: Clasificador de imágenes
+- numpy >= 1.19.2: Operaciones numéricas
+- Pillow >= 8.0.0: Procesamiento de imágenes
+- opencv-python >= 4.5.0: Visualización de imágenes (opcional)
+- matplotlib >= 3.3.0: Visualización de resultados
 
 ---
 
 ## Instalación
 
-1. Clona este repositorio:
+1. Clona el repositorio:
    ```bash
    git clone https://github.com/PabloZuVal/EmotionAnalyzer.git
    cd EmotionAnalyzer
    ```
 
-2. Instala las dependencias listadas en `requirements.txt`:
+2. Crea y activa un entorno virtual (recomendado):
+   ```bash
+   python -m venv emotion_analyzer
+   source emotion_analyzer/bin/activate  # En Unix/macOS
+   # o
+   .\emotion_analyzer\Scripts\activate  # En Windows
+   ```
+
+3. Instala las dependencias:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. (Opcional) Si deseas usar lematización en el análisis de texto, instala spaCy y el modelo en español:
-   ```bash
-   pip install spacy
-   python -m spacy download es_core_news_sm
-   ```
+---
+
+## Estructura del Proyecto
+
+```
+EmotionAnalyzer/
+├── clasificador_texto.py      # Análisis de emociones en texto
+├── clasificador_imagen.py     # Análisis de emociones en imágenes
+├── comparador_multimodal.py   # Integración y comparación
+├── diccionario_emociones.py   # Diccionario para análisis de texto
+├── frases.json               # Dataset de frases con emociones
+├── imagenes/                 # Directorio de imágenes faciales
+│   ├── 01.png
+│   ├── 02.png
+│   └── ...
+├── fer2013_mini_XCEPTION.99-0.65.hdf5  # Modelo pre-entrenado
+└── requirements.txt          # Dependencias del proyecto
+```
 
 ---
 
 ## Uso
 
-El proyecto consta de tres componentes principales:
+El sistema se compone de tres módulos principales que pueden ejecutarse independientemente:
 
-1. **Análisis de Texto** (`clasificador_texto.py`):
-   - Analiza emociones en frases usando el diccionario proporcionado.
-   - Ejecución:
-     ```bash
-     python clasificador_texto.py
-     ```
+1. **Análisis de Texto**:
+   ```bash
+   python clasificador_texto.py
+   ```
+   Analiza las frases del archivo `frases.json` usando el diccionario emocional.
 
-2. **Análisis de Imágenes** (`clasificador_imagen.py`):
-   - Analiza emociones en imágenes faciales usando el modelo preentrenado.
-   - Ejecución:
-     ```bash
-     python clasificador_imagen.py
-     ```
+2. **Análisis de Imágenes**:
+   ```bash
+   python clasificador_imagen.py
+   ```
+   Procesa las imágenes faciales usando el modelo FER2013.
 
-3. **Comparación Multimodal** (`comparador_multimodal.py`):
-   - Compara las emociones detectadas en texto e imágenes y genera un archivo de resultados.
-   - Ejecución:
-     ```bash
-     python comparador_multimodal.py
-     ```
+3. **Análisis Multimodal**:
+   ```bash
+   python comparador_multimodal.py
+   ```
+   Ejecuta el análisis completo y genera el archivo `resultados.csv`.
 
 ---
 
-## Estructura de Archivos
+## Entregables
 
-```bash
-.
-├── clasificador_imagen.py        # Script para análisis de emociones en imágenes
-├── clasificador_texto.py         # Script para análisis de emociones en texto
-├── comparador_multimodal.py      # Script para comparación de emociones y generación de resultados
-├── diccionario_emociones.py      # Diccionario de emociones para análisis de texto
-├── fer2013_mini_XCEPTION.99-0.65.hdf5  # Modelo preentrenado para reconocimiento de emociones en imágenes
-├── frases.json                   # Archivo JSON con frases y emociones asociadas
-├── imagenes/                     # Directorio con imágenes faciales
-│   ├── 01.png
-│   ├── 02.png
-│   ├── ...
-├── requirements.txt              # Lista de dependencias
-└── README.md                     # Este archivo
-```
+1. **Código Fuente**:
+   - `clasificador_texto.py`
+   - `clasificador_imagen.py`
+   - `comparador_multimodal.py`
 
----
+2. **Archivo de Resultados**:
+   - `resultados.csv` con las columnas:
+     - frase
+     - imagen
+     - emocion_texto
+     - emocion_imagen
+     - emocion_esperada
+     - coincide
 
-## Datos
-
-- **`frases.json`**: Contiene frases en español asociadas a emociones básicas (alegría, tristeza, enojo, etc.).
-- **`imagenes/`**: Directorio con imágenes faciales que muestran emociones visibles.
+3. **Informe de Reflexión** (`informe_reflexion.pdf`):
+   - Máximo 2 páginas
+   - Análisis de resultados
+   - Discusión de causas de divergencia
+   - Conclusiones y observaciones
 
 ---
 
-## Modelo Preentrenado
+## Evaluación
 
-El modelo **`fer2013_mini_XCEPTION.99-0.65.hdf5`** es un modelo preentrenado para clasificar emociones en imágenes faciales, basado en el dataset FER2013. El modelo espera imágenes de **64x64 píxeles en escala de grises**. Las emociones que puede detectar son: enojo, asco, miedo, alegría, tristeza, sorpresa y neutral.
-
----
-
-## Resultados
-
-El script `comparador_multimodal.py` genera un archivo **`resultados.csv`** con las siguientes columnas:
-- `frase`: La frase analizada.
-- `imagen`: El nombre del archivo de la imagen asociada.
-- `emocion_texto`: Emoción detectada en el texto.
-- `emocion_imagen`: Emoción detectada en la imagen.
-- `coincide`: Indica si las emociones coinciden ("sí" o "no").
-
-Además, se debe entregar un **`informe_reflexion.pdf`** con un análisis de los resultados y posibles causas de divergencia entre las modalidades.
+| Criterio | Puntos |
+|----------|---------|
+| Clasificador de texto funcional y preciso | 25 |
+| Clasificador de imagen implementado y funcional | 25 |
+| Comparación precisa entre ambas emociones | 20 |
+| Análisis reflexivo en el informe | 20 |
+| Organización, claridad del código y entregables | 10 |
+| **Total** | **100** |
 
 ---
 
-## Créditos
+## Notas Importantes
 
-- **Modelo FER2013**: [Fuente del modelo, si aplica]
-- **Diccionario de Emociones**: [Fuente, si aplica]
-
----
-
-## Notas Adicionales
-
-- Asegúrate de que las imágenes estén en el formato correcto (**64x64 píxeles, escala de grises**) para el modelo de imágenes.
-- El análisis de texto considera negaciones (como "no", "nunca") para ajustar los puntajes emocionales.
-- Para mejorar el análisis de texto, puedes usar lematización instalando spaCy y el modelo `es_core_news_sm`.
+- El modelo FER2013 espera imágenes de 64x64 píxeles en escala de grises
+- El análisis de texto considera negaciones ("no", "nunca", "jamás")
+- Las imágenes deben estar nombradas según el formato especificado en `frases.json`
+- Los resultados incluyen tanto la emoción detectada como la esperada para facilitar el análisis
 
 ---
 
-**¡Gracias por usar este proyecto!** Si tienes alguna pregunta o sugerencia, no dudes en abrir un issue o contactar al equipo.
+Para cualquier consulta o problema, por favor crear un issue en el repositorio o contactar al equipo docente.
