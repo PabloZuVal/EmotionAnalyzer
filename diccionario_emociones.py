@@ -152,4 +152,52 @@ diccionario_emociones = {
   "repugnado": {
       "asco": -2
   },
+  "sonriendo": {
+      "alegría": 2
+  },
+  "inquieto": {
+      "miedo": -1
+  },
+  "devastado": {
+      "tristeza": -2
+  },
+  "vacío": {
+      "tristeza": -2
+  },
+  "solo": {
+      "tristeza": -1
+  },
+  "pánico": {
+      "miedo": -2
+  },
+  "encanta": {
+      "alegría": 2
+  },
+  "ansiedad": {
+      "miedo": -1
+  },
+  "lloré": {
+      "tristeza": -2
+  },
+  "desagradable": {
+      "asco": -1
+  },
+  "inaceptable": {
+      "enojo": -2
+  },
+  "coraje": {
+      "enojo": -2
+  },
+  "exploto": {
+      "enojo": -2
+  },
+  "mejor": {
+      "alegría": 1
+  },
+  "creer": {
+      "sorpresa": 1
+  },
+  "esperaba": {
+      "sorpresa": 1
+  },
 }
