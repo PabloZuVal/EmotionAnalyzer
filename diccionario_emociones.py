@@ -1,7 +1,6 @@
 diccionario_emociones = {
   "feliz": {
-    "alegría": 2,
-
+    "alegría": 2
   },
   "contento": {
     "alegría": 2
@@ -10,7 +9,7 @@ diccionario_emociones = {
     "alegría": 2
   },
   "satisfecho": {
-    "alegría": 2
+    "alegría": 1
   },
   "encantado": {
     "alegría": 2
@@ -22,13 +21,13 @@ diccionario_emociones = {
     "alegría": 1
   },
   "divertido": {
-    "alegría": 1
+    "alegría": 2
   },
   "optimista": {
     "alegría": 1
   },
   "pleno": {
-    "alegría": 1
+    "alegría": 2
   },
   "emocionado": {
     "alegría": 1
@@ -46,111 +45,111 @@ diccionario_emociones = {
     "alegría": 2
   },
   "triste": {
-    "tristeza": 2
+    "tristeza": -2
   },
   "deprimido": {
-    "tristeza": 2
+    "tristeza": -2
   },
   "melancólico": {
-    "tristeza": 2
+    "tristeza": -1
   },
   "llorando": {
-    "tristeza": 2
+    "tristeza": -2
   },
   "sonreir":{
       "alegría": 2
   },
   "abatido": {
-    "tristeza": 1
+    "tristeza": -1
   },
   "desmotivado": {
-    "tristeza": 1
+    "tristeza": -1
   },
   "apagado": {
-    "tristeza": 1
+    "tristeza": -1
   },
   "enojado": {
-    "enojo": 2
+    "enojo": -2
   },
   "molesto": {
-    "enojo": 2
+    "enojo": -2
   },
   "furioso": {
-    "enojo": 2
+    "enojo": -2
   },
   "rabia": {
-    "enojo": 2
+    "enojo": -2
   },
   "irritado": {
-    "enojo": 2
+    "enojo": -2
   },
   "harto": {
-    "enojo": 1
+    "enojo": -1
   },
   "exasperado": {
-    "enojo": 1
+    "enojo": -1
   },
   "miedo": {
-    "miedo": 2
+    "miedo": -2
   },
   "temor": {
-    "miedo": 2
+    "miedo": -2
   },
   "asustado": {
-    "miedo": 2
+    "miedo": -2
   },
   "ansioso": {
-    "miedo": 1
+    "miedo": -1
   },
   "nervioso": {
-    "miedo": 1
+    "miedo": -1
   },
   "paranoico": {
-    "miedo": 1
+    "miedo": -2
   },
   "asco": {
-    "asco": 2
+    "asco": -2
   },
   "repulsión": {
-    "asco": 2
+    "asco": -2
   },
   "repugnante": {
-    "asco": 2
+    "asco": -2
   },
   "nauseabundo": {
-    "asco": 2
+    "asco": -2
   },
   "asqueroso": {
-    "asco": 2
+    "asco": -2
   },
   "náuseas": {
-    "asco": 2
+    "asco": -2
   },
   "rechazo": {
-    "asco": 1
+    "asco": -1
   },
   "sorpresa": {
-    "sorpresa": 2
+    "sorpresa": 1
   },
   "sorprendente": {
-    "sorpresa": 2
+    "sorpresa": 1
   },
   "impresionado": {
-    "sorpresa": 2
+    "sorpresa": 1
   },
   "inesperado": {
-    "sorpresa": 2
+    "sorpresa": 0
   },
   "desprevenido": {
-    "sorpresa": 1
+    "sorpresa": 0
   },
   "impactado": {
-    "sorpresa": 1
+    "sorpresa": 0
   },
   "asombrado": {
-    "sorpresa": 2
+    "sorpresa": 1
   },
   "repugnado": {
-      "asco": 2
-      },
+      "asco": -2
+  },
 }
