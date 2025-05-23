@@ -50,6 +50,6 @@ if __name__ == "__main__":
         path = os.path.join(carpeta, nombre_imagen)
         try:
             emocion = predecir_emocion_desde_imagen(path)
-            print(f"{nombre_imagen} → {emocion}")
+            print(f"Emoción detectada en imagen {nombre_imagen} → {emocion}")
         except Exception as e:
             print(f"{nombre_imagen} → Error: {e}")
