@@ -1,13 +1,13 @@
 frase,imagen,emocion_texto,emocion_imagen,emocion_esperada,coincide
 Me sentí repugnado al verlo,imagenes/01.png,asco,alegría,asco,No
 Estoy sonriendo desde que llegué,imagenes/02.png,alegría,alegría,alegría,Sí
-No soporto esa textura,imagenes/03.png,neutral,neutral,asco,Sí
+No soporto esa textura,imagenes/03.png,asco,neutral,asco,No
 ¡Estoy que exploto!,imagenes/02.png,enojo,alegría,enojo,No
 Fue una experiencia sorprendente,imagenes/02.png,sorpresa,alegría,sorpresa,No
 Me preocupa el futuro,imagenes/02.png,miedo,alegría,miedo,No
 Me asusté con el ruido,imagenes/02.png,miedo,alegría,miedo,No
 Estoy nervioso por el examen,imagenes/02.png,miedo,alegría,miedo,No
-No soporto más esta injusticia,imagenes/02.png,neutral,alegría,enojo,No
+No soporto más esta injusticia,imagenes/02.png,enojo,alegría,enojo,No
 Estoy furioso por lo que pasó,imagenes/02.png,enojo,alegría,enojo,No
 Estoy satisfecho con mi trabajo,imagenes/02.png,alegría,alegría,alegría,Sí
 Siento miedo al caminar solo,imagenes/05.png,miedo,sorpresa,miedo,No
@@ -15,7 +15,7 @@ Me sorprendió tu regalo,imagenes/04.png,sorpresa,alegría,sorpresa,No
 Fue una escena nauseabunda,imagenes/04.png,asco,alegría,asco,No
 Hoy no tengo ánimo de nada,imagenes/03.png,neutral,neutral,tristeza,Sí
 Siento una repulsión intensa,imagenes/04.png,asco,alegría,asco,No
-¡No me lo imaginaba!,imagenes/06.png,neutral,sorpresa,sorpresa,No
+¡No me lo imaginaba!,imagenes/06.png,sorpresa,sorpresa,sorpresa,Sí
 Estoy muy feliz con el resultado,imagenes/02.png,alegría,alegría,alegría,Sí
 ¡Fue un día maravilloso!,imagenes/02.png,alegría,alegría,alegría,Sí
 Estoy inquieto todo el tiempo,imagenes/05.png,miedo,sorpresa,miedo,No
@@ -34,7 +34,7 @@ Esto es completamente inaceptable,imagenes/07.png,enojo,enojo,enojo,Sí
 Es absolutamente asqueroso,imagenes/06.png,asco,sorpresa,asco,No
 Me tomó desprevenido,imagenes/06.png,sorpresa,sorpresa,sorpresa,Sí
 Perdí algo importante para mí,imagenes/07.png,neutral,enojo,tristeza,No
-¡No lo puedo creer!,imagenes/07.png,neutral,enojo,sorpresa,No
+¡No lo puedo creer!,imagenes/07.png,sorpresa,enojo,sorpresa,No
 Todo salió mejor de lo esperado,imagenes/03.png,alegría,neutral,alegría,No
 Me da pánico hablar en público,imagenes/05.png,miedo,sorpresa,miedo,No
 Me da náuseas recordarlo,imagenes/05.png,asco,sorpresa,asco,No
@@ -53,7 +53,7 @@ Lloré anoche pensando en eso,imagenes/06.png,tristeza,sorpresa,tristeza,No
 ¡Qué sorpresa tan agradable!,imagenes/07.png,sorpresa,enojo,sorpresa,No
 Eso me provoca rechazo,imagenes/06.png,asco,sorpresa,asco,No
 Esa comida me dio asco,imagenes/04.png,asco,alegría,asco,No
-No esperaba verte aquí,imagenes/06.png,neutral,sorpresa,sorpresa,No
+No esperaba verte aquí,imagenes/06.png,sorpresa,sorpresa,sorpresa,Sí
 Me siento muy solo últimamente,imagenes/05.png,tristeza,sorpresa,tristeza,No
 Disfruto mucho la reunión de hoy,imagenes/02.png,alegría,alegría,alegría,Sí
 Qué alegría verte de nuevo,imagenes/02.png,neutral,alegría,alegría,No
