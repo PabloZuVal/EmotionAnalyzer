@@ -200,4 +200,78 @@ diccionario_emociones = {
   "esperaba": {
       "sorpresa": 1
   },
+  "soporto": {
+    "asco": -2,
+    "enojo": -1
+  },
+  "preocupa": {
+    "miedo": -1
+  },
+  "preocupado": {
+    "miedo": -1
+  },
+  "enfada": {
+    "enojo": -2
+  },
+  "gris": {
+    "tristeza": -1
+  },
+  "perdi": {
+    "tristeza": -2
+  },
+  "perdido": {
+    "tristeza": -2
+  },
+  "imaginar": {
+    "sorpresa": 1
+  },
+  "imaginaba": {
+    "sorpresa": 1
+  },
+  "escuchar": {
+    "enojo": -1
+  },
+  "escuchen": {
+    "enojo": -1
+  },
+  "actitud": {
+    "enojo": -1
+  },
+  "nauseabunda": {
+    "asco": -2
+  },
+  "animo": {
+    "tristeza": -1
+  },
+  "daño": {
+    "miedo": -2
+  },
+  "temo": {
+    "miedo": -2
+  },
+  "temer": {
+    "miedo": -2
+  },
+  "molesta": {
+    "enojo": -2
+  },
+  "molestar": {
+    "enojo": -2
+  },
+  "regalo": {
+    "sorpresa": 1,
+    "alegría": 1
+  },
+  "injusticia": {
+    "enojo": -2
+  },
+  "ruido": {
+    "miedo": -1
+  },
+  "futuro": {
+    "miedo": -1
+  },
+  "textura": {
+    "asco": -1
+  }
 }

@@ -17,7 +17,7 @@ def analizar_emocion(frase, diccionario):
     Analiza la emoción predominante en una frase usando el diccionario de emociones
     """
     tokens = preprocesar(frase)
-    puntuaciones = defaultdict(float)  # Cambiado a float para manejar mejor los decimales
+    puntuaciones = defaultdict(int)  # Cambiado a int para mantener consistencia con el diccionario
     negacion = False
     
     for i, token in enumerate(tokens):
