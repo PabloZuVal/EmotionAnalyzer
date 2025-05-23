@@ -15,8 +15,11 @@ emotion_labels_es = {
     'neutral': 'neutral'
 }
 
-# Cargar modelo
-model = load_model("fer2013_mini_XCEPTION.99-0.65.hdf5", compile=False)
+def cargar_modelo(ruta_modelo):
+    """
+    Carga el modelo pre-entrenado desde la ruta especificada
+    """
+    return load_model(ruta_modelo, compile=False)
 
 # Preprocesamiento de imagen
 def cargar_imagen_gris_64x64(path):
@@ -26,15 +29,31 @@ def cargar_imagen_gris_64x64(path):
     return x
 
 # Predicción individual
-def predecir_emocion_desde_imagen(path_imagen):
+def predecir_emocion_desde_imagen(path_imagen, model=None):
+    """
+    Predice la emoción desde una imagen, retornando la emoción y las puntuaciones
+    """
+    # Si no se proporciona un modelo, usar el modelo global
+    if model is None:
+        model = load_model("fer2013_mini_XCEPTION.99-0.65.hdf5", compile=False)
+        
     x = cargar_imagen_gris_64x64(path_imagen)
-    pred = model.predict(x)
+    pred = model.predict(x, verbose=0)
     idx = np.argmax(pred)
     emocion_en = emotion_labels_en[idx]
-    return emotion_labels_es[emocion_en]
+    
+    # Crear diccionario de puntuaciones
+    puntuaciones = {}
+    for i, label in enumerate(emotion_labels_en):
+        puntuaciones[emotion_labels_es[label]] = float(pred[0][i])
+    
+    return emotion_labels_es[emocion_en], puntuaciones
 
 # Proceso completo para carpeta
 if __name__ == "__main__":
+    # Cargar el modelo
+    model = cargar_modelo("fer2013_mini_XCEPTION.99-0.65.hdf5")
+    
     carpeta = "imagenes/"
     if not os.path.exists(carpeta):
         print("❌ La carpeta 'imagenes/' no existe.")
@@ -49,7 +68,8 @@ if __name__ == "__main__":
     for nombre_imagen in sorted(imagenes):
         path = os.path.join(carpeta, nombre_imagen)
         try:
-            emocion = predecir_emocion_desde_imagen(path)
+            emocion, puntuaciones = predecir_emocion_desde_imagen(path, model)
             print(f"Emoción detectada en imagen {nombre_imagen} → {emocion}")
+            print(f"Puntuaciones: {puntuaciones}\n")
         except Exception as e:
             print(f"{nombre_imagen} → Error: {e}")
