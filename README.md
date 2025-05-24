@@ -2,16 +2,24 @@
 
 Este proyecto implementa un sistema de reconocimiento multimodal de emociones que analiza tanto texto como imágenes faciales, comparando si ambas modalidades expresan la misma emoción. Es parte de la Actividad 2 del curso de Computación Afectiva.
 
+## Estado Actual del Proyecto
+
+- **Clasificador de Texto**: 93.33% de precisión en la detección de emociones básicas
+- **Clasificador de Imágenes**: Implementado con áreas de mejora identificadas
+- **Sistema Multimodal**: 28.3% de coincidencia en análisis combinado (17/60 casos)
+
 ---
 
 ## Tabla de Contenidos
 
+- [Estado Actual del Proyecto](#estado-actual-del-proyecto)
 - [Descripción de la Actividad](#descripción-de-la-actividad)
 - [Competencias Desarrolladas](#competencias-desarrolladas)
 - [Requisitos](#requisitos)
 - [Instalación](#instalación)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Uso](#uso)
+- [Resultados y Métricas](#resultados-y-métricas)
 - [Entregables](#entregables)
 - [Evaluación](#evaluación)
 
@@ -121,6 +129,34 @@ El sistema se compone de tres módulos principales que pueden ejecutarse indepen
 
 ---
 
+## Resultados y Métricas
+
+### Clasificador de Texto
+- Precisión global: 93.33%
+- Manejo efectivo de negaciones y contexto
+- Sistema de puntuación basado en números enteros
+- Solo 4 casos de error en 60 evaluaciones
+
+### Clasificador de Imágenes
+Principales desafíos identificados:
+- Confusión frecuente entre emociones similares:
+  * Miedo → Sorpresa (7 casos)
+  * Asco → Alegría (5 casos)
+  * Tristeza → Sorpresa (5 casos)
+
+Mejoras implementadas:
+- Umbrales de confianza específicos por emoción
+- Sistema de emociones relacionadas
+- Normalización mejorada de imágenes
+- Lógica de decisión robusta
+
+### Sistema Multimodal
+- Tasa de coincidencia: 28.3%
+- 17 casos exitosos de 60 evaluaciones
+- Documentación detallada en `resultados.csv`
+
+---
+
 ## Entregables
 
 1. **Código Fuente**:
@@ -163,7 +199,13 @@ El sistema se compone de tres módulos principales que pueden ejecutarse indepen
 - El modelo FER2013 espera imágenes de 64x64 píxeles en escala de grises
 - El análisis de texto considera negaciones ("no", "nunca", "jamás")
 - Las imágenes deben estar nombradas según el formato especificado en `frases.json`
-- Los resultados incluyen tanto la emoción detectada como la esperada para facilitar el análisis
+- Los resultados incluyen tanto la emoción detectada como la esperada
+- Se recomienda revisar el informe de reflexión para un análisis detallado de las divergencias
+
+### Limitaciones Conocidas
+- El clasificador de imágenes muestra dificultades con emociones similares
+- La integración multimodal requiere mejoras para aumentar la tasa de coincidencia
+- Las condiciones de iluminación pueden afectar el rendimiento del análisis de imágenes
 
 ---
 
